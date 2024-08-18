@@ -1,7 +1,12 @@
+import Header from "../components/Headers"
+import styles from '../styles/App.module.css'
+
 const App = () => {
   return (
     <>
-      <div>my first app testing 4</div>
+      <div className={styles.main}>
+        <Header/>
+      </div>
     </>
   )
 }
