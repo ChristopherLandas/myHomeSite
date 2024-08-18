@@ -1,0 +1,52 @@
+.main{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 200vh;
+  background-color: rgb(216, 216, 55);
+  min-width: 500px
+}
+
+.header{
+  height: 80px;
+  background-color: aqua;
+
+  position: sticky;
+  top: -1px;
+
+  display: flex;
+
+  padding-inline: 120px;
+}
+
+.header.sticky{
+  background-color: antiquewhite;
+}
+
+.header.parts{
+}
+
+.header.parts.logo{
+  background-color: rebeccapurple;
+}
+
+.header.parts.navigations{
+  background-color: green;
+}
+
+.header.parts.menu{
+  background-color: blue;
+}
+
+@media (max-width: 500px) {
+  .header.parts{
+    display: none;
+  }
+}
+
+.test{
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+}
