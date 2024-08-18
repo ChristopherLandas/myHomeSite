@@ -1,4 +1,5 @@
 import Header from "../components/Headers"
+import ParallaxTitle from "../components/ParallaxTitle"
 import styles from '../styles/App.module.css'
 
 const App = () => {
@@ -6,6 +7,8 @@ const App = () => {
     <>
       <div className={styles.main}>
         <Header/>
+
+        <ParallaxTitle/>
       </div>
     </>
   )

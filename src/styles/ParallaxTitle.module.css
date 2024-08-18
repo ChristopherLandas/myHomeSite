@@ -1,0 +1,19 @@
+.root{
+  width: 100%;
+  height: 450px;
+  background-color: rgb(183, 0, 255);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workableArea{
+  display: flex;
+  flex-grow: 1;
+
+  margin: 20px;
+  height: 100%;
+
+  background-color: aqua;
+}

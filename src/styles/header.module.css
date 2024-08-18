@@ -37,6 +37,8 @@
 
   align-items: center;
   justify-content: center;
+
+  padding: 10px;
 }
 
 .navigations.home{
@@ -60,5 +62,13 @@
 
   .navigations.selections{
     display: none;
+  }
+
+  .navigations.home{
+    justify-content: start;
+  }
+
+  .navigations.menu{
+    justify-content: end;
   }
 }
