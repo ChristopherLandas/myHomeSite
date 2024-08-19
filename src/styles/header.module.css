@@ -1,14 +1,16 @@
 .header{
   height: 60px;
   
-  position: sticky;
-  top: -.1px; /*sets to highest negative number as possible*/
+  position: fixed;
+  top: 0px; /*sets to highest negative number as possible*/
+  left: 0px;
+  right: 0px;
    
   display: flex;
   
   padding-inline: 120px;
   
-  background-color: rgb(0, 186, 243);
+  background-color: rgba(66, 40, 54, 0.219);
 }
 
 .background{

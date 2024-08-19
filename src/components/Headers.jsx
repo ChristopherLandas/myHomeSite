@@ -1,11 +1,13 @@
 import { useEffect } from 'react'
 import styles from '../styles/header.module.css'
-import HeaderObserver from '../hooks/HeaderObserver'
+// import HeaderObserver from '../hooks/HeaderObserver'
 import clsx from 'clsx'
+import scrollEventTrigger from '../hooks/scrollEventTrigger'
+// import scrollEventTrigger from '../hooks/scrollEventTrigger'
 
 const Header = () => {
   useEffect(()=>{
-    HeaderObserver(styles.header, styles.sticky)
+    scrollEventTrigger(styles.header, styles.sticky, 120)
   },[])
 
   return (
