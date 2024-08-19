@@ -11,6 +11,8 @@
   padding-inline: 120px;
   
   background-color: rgba(66, 40, 54, 0.219);
+
+  z-index: 1;
 }
 
 .background{
