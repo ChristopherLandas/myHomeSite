@@ -1,117 +1,67 @@
 import Header from "../components/Headers"
-// import ParallaxTitle from "../components/ParallaxTitle"
 import styles from '../styles/App.module.css'
-import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 
-import img1 from '../assets/2.png'
-import img2 from '../assets/3.png'
-import img3 from '../assets/4.png'
-import img4 from '../assets/5.png'
-import img5 from '../assets/6.png'
-import img6 from '../assets/7.png'
-import img7 from '../assets/8.png'
+import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax"
+
+import img1 from '../assets/parallax backgound pack/1.png'
+import img2 from '../assets/parallax backgound pack/2.png'
+import img3 from '../assets/parallax backgound pack/3.png'
+import img4 from '../assets/parallax backgound pack/4.png'
+import img5 from '../assets/parallax backgound pack/5.png'
+import img6 from '../assets/parallax backgound pack/6.png'
+import img7 from '../assets/parallax backgound pack/7.png'
+import img8 from '../assets/parallax backgound pack/8.png'
+import img9 from '../assets/parallax backgound pack/9.png'
+import img10 from '../assets/parallax backgound pack/10.png'
+import img11 from '../assets/parallax backgound pack/11.png'
 
 const App = () => {
   return (
     <>
       <Header/>
-      
-      <Parallax pages={2}>
-        <ParallaxLayer
-            speed={1}
-            style={{
-              backgroundImage: `url(${img1})`,
-              backgroundSize: 'cover',
-              width: '100%',
-              height: '100vh'
-            }}
-          ></ParallaxLayer>
-        
-        <ParallaxLayer
-            speed={1}
-            style={{
-              backgroundImage: `url(${img2})`,
-              backgroundSize: 'cover',
-              width: '100%',
-              height: '100vh'
-            }}
-          ></ParallaxLayer>
+      <div className={styles.main}>
+        {/* <ParallaxProvider>
+          <Parallax speed={-20}>
+            <div style={{backgroundImage: `url(${img1})`, height: '100vh', position:'absolute', top: '0', bottom: '0'}}></div>
+          </Parallax>
 
-          <ParallaxLayer
-            speed={2}
-            style={{
-              backgroundImage: `url(${img3})`,
-              backgroundSize: 'cover',
-              width: '100%',
-              height: '100vh'
-            }}
-          ></ParallaxLayer>
+          <Parallax speed={-17}>
+            <div style={{backgroundImage: `url(${img2})`, height: '100vh', position:'absolute', top: '0', bottom: '0'}}></div>
+          </Parallax>
 
-          <ParallaxLayer
-            speed={3}
-            style={{
-              backgroundImage: `url(${img4})`,
-              backgroundSize: 'cover',
-              width: '100%',
-              height: '100vh'
-            }}
-          ></ParallaxLayer>
+          <Parallax speed={-13}>
+            <div style={{backgroundImage: `url(${img3})`, height: '100vh', position:'absolute', top: '0', bottom: '0'}}></div>
+          </Parallax>
 
-          <ParallaxLayer
-            speed={4}
-            style={{
-              backgroundImage: `url(${img5})`,
-              backgroundSize: 'cover',
-              width: '100%',
-              height: '100vh'
-            }}
-          ></ParallaxLayer>
+          <Parallax speed={-12}>
+            <div style={{backgroundImage: `url(${img4})`, height: '100vh', position:'absolute', top: '0', bottom: '0'}}></div>
+          </Parallax>
 
-          <ParallaxLayer
-            speed={5}
-            style={{
-              backgroundImage: `url(${img6})`,
-              backgroundSize: 'cover',
-              width: '100%',
-              height: '100vh'
-            }}
-          ></ParallaxLayer>
+          <Parallax speed={-20}>
+            <div style={{backgroundImage: `url(${img5})`, height: '100vh', position:'absolute', top: '0', bottom: '0'}}></div>
+          </Parallax>
+        </ParallaxProvider> */}
+        <ParallaxProvider styles={{innherHeight : '200vh'}}>
+            <ParallaxBanner
+              layers={[
+                {image: img11, speed: -20, scaleY: 5},
+                {image: img10, speed: -20, scaleY: 10},
+                {image: img9, speed: -20, scaleY: 15},
+                {image: img8, speed: -20, scaleY: 20},
+                {image: img7, speed: -20, scaleY: 25},
+                {image: img6, speed: -20, scaleY: 25},
+                {image: img5, speed: -20, scaleY: 27},
+                {image: img4, speed: -20, scaleY: 30},
+                {image: img3, speed: -20, scaleY: 31},
+                {image: img2, speed: -20, scaleY: 33},
+                {image: img1, speed: -20, scaleY: 36},
+              ]}
+              style={{height: '100vh' }}
+            />
+        </ParallaxProvider>
 
-          <ParallaxLayer
-            speed={6}
-            style={{
-              backgroundImage: `url(${img7})`,
-              backgroundSize: 'cover',
-              width: '100%',
-              height: '100vh'
-            }}
-          ></ParallaxLayer>
-
-          <ParallaxLayer
-            speed={6}
-            offset={.999}
-            style={{
-              backgroundColor: '#27040f',
-              height:'200vh'
-            }}
-          >
-            hello
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            world
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-          </ParallaxLayer>
-      </Parallax>
+        <div style={{backgroundColor: '#00ff70', height: '200vh'}}></div>
+      </div>
     </>
   )
 }
