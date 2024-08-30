@@ -1,5 +1,5 @@
 .header{
-  height: 60px;
+  height: 55px;
   
   position: fixed;
   top: 0px; /*sets to highest negative number as possible*/
@@ -8,9 +8,9 @@
    
   display: flex;
   
-  padding-inline: 120px;
+  padding-inline: 60px;
   
-  background-color: rgba(66, 40, 54, 0.219);
+  background-color: hsla(209, 53%, 16%, 0.5);
 
   z-index: 9;
 }
@@ -19,7 +19,7 @@
   position: absolute;
   width: 500%;
   height: 100%;
-  /* z-index: -1; */
+  z-index: -1;
   top: 0%;
   margin-left: -500px; /*canceling the padding*/
 }
@@ -27,6 +27,11 @@
 .header .background{
   opacity: 0%;
   background: linear-gradient(to bottom, transparent 85%, rgba(0, 0, 0, 0.295));
+  transition: ease-out 150ms;
+}
+
+.header.sticky{
+  background-color: hsla(208, 58%, 6%, 0.44);
   transition: ease-out 150ms;
 }
 
@@ -46,17 +51,32 @@
 }
 
 .navigations.home{
-  background-color: aqua;
+  /* background-color: aqua; */
   min-width: 150px;
 }
 
 .navigations.selections{
-  background-color: rgb(0, 255, 42);
+  /* background-color: rgb(0, 255, 42); */
   flex-grow: 8;
+  display: flex;
+  justify-content: center;
 }
 
+.navigations a{
+  cursor:pointer;
+  padding-inline: 5%;
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
+
+.navigations.selections a:hover{
+  text-decoration:underline;
+}
+
+
 .navigations.menu{
-  background-color: rgb(255, 123, 0);  
+  /* background-color: rgb(255, 123, 0);   */
 }
 
 @media (max-width: 800px) {

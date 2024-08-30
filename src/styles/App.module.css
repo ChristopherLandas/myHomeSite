@@ -2,6 +2,76 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 200vh;
+  height: 100vh;
   /* background-color: rgb(216, 216, 55); */
+}
+
+.panels{
+  display: flex;
+  background-color: #13293D;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.greetings{
+  display: flex;
+  /* background-color: antiquewhite; */
+  height: 60%;
+  width: 90%;
+}
+
+.greetings .pfp{
+  /* background-color: aqua; */
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image{
+  position: relative;
+}
+
+.greetings .pfp .image img{
+  border-radius: 100%;
+  aspect-ratio: 1;
+  max-height: 400px;
+}
+
+.greetings .pfp .image h7{
+  position: absolute;
+  background-color: #0e161b;
+  border-radius: 100%;
+  font-size: 80px;
+  bottom: 0;
+  right: 0;
+}
+
+.greetings .msg{
+  /* background-color:yellow; */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.greetings .msg .top{
+  /* background-color: black; */
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+
+.greetings .msg .mid{
+  /* background-color: rgb(255, 255, 255); */
+  height: 75%;
+  font-size: 1.65rem;
+  padding-block: 20px;
+}
+
+.greetings .msg .bot{
+  display: flex;
+  align-items: end;
+  height: 10%;
 }

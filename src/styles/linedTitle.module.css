@@ -1,0 +1,20 @@
+.main{
+  display: flex;
+  align-items: center;
+  /* background-color: rgb(0, 255, 98); */
+}
+
+.title{
+  margin-inline: 12px;
+  white-space: nowrap;
+  /* background-color: azure; */
+}
+
+.main hr{
+  min-width: 20px;
+  width: 50%;
+  height: 3px;
+  background-color: rgb(26, 114, 114);
+  border: none;
+  border-radius: 20px;
+}
