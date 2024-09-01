@@ -6,7 +6,7 @@ const LinedTitle = (props) => {
     <div className={styles.main} style={{width: '100%'}}>
       <hr style={{backgroundColor: props.lineColor}}/>
       <div className={styles.title} style={{color: props.titleColor, fontSize: props.titleSize}}>
-        {props.title}
+        <h3>{props.title}</h3>
       </div>
       <hr style={{backgroundColor: props.lineColor}}/>
     </div>

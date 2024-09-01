@@ -22,4 +22,55 @@ body {
   min-height: 100vh;
 
   overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
+}
+
+img{
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+h6{
+  cursor: default;
+}
+
+.selectDisable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.selectEnable { 
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+}
+
+footer{
+  background-color: #13293D;
+  color: rgba(255, 255, 255, 0.651);
+}
+
+footer hr{
+  width: 95%;
+  background-color: hsla(0, 0%, 100%, 0.295);
+  border: none;
+  height: 2px;
+}
+
+footer a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.651);
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Playfair Display', serif;
 }

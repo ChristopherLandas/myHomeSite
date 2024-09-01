@@ -9,7 +9,15 @@
 .panels{
   display: flex;
   background-color: #13293D;
-  min-height: 100vh;
+  min-height: 99vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.panels_short{
+  display: flex;
+  background-color: #13293D;
+  min-height: 75vh;
   justify-content: center;
   align-items: center;
 }
@@ -74,4 +82,42 @@
   display: flex;
   align-items: end;
   height: 10%;
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 90%;
+}
+
+.projects .title{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.projects .content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.projects .content .techs{
+  height: 150px;
+  aspect-ratio: 1;
+}
+
+footer .divOut{
+  height: 25vh;
+  padding-inline: 5%;
+  display: flex;
+}
+
+footer .divOut .partition{
+  width: 25%;
+  height: 100%;
 }
