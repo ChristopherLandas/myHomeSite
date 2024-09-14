@@ -25,3 +25,23 @@
   transform: translate(0, -50px);
   color: #13293D;
 }
+
+@media (max-width: 768px){
+  .topmost h1{
+    font-size: 5rem;
+  }
+
+  .topmost h3{
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .topmost h1{
+    font-size: 3rem;
+  }
+
+  .topmost h3{
+    font-size: 2rem;
+  }
+}

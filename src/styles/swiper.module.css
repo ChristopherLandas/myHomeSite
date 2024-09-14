@@ -1,0 +1,34 @@
+.swiper {
+  width: 100%;
+  height: 600px;
+  --swiper-pagination-color: #D96080;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .swiper{
+    height: 630px;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper{
+    height: 525px;
+  }
+}
