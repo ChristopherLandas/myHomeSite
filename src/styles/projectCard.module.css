@@ -1,15 +1,15 @@
 .main{
-  min-height: 320px;
-  min-width: 350px;
+  /* min-height: 1px; */
+  min-width: 144px;
   width: 525px;
-  height: 480px;
-  /* background-color: aqua; */
+  /* height: 480px; */
+  aspect-ratio: 35/32;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   padding: 12px;
-  /* border-radius: 12px; */
+  z-index: 5;
 }
 
 .main a{
@@ -121,4 +121,85 @@
 .main a:hover .titleCon .prompt{
   height: auto;
   padding-bottom: 12px;
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+  .main{
+    width: 420px;
+  }
+
+  .main .titleCon .title h3{
+    font-size: 1.3rem;
+    color: #FFF5BD;
+  }
+
+  .main a:hover .titleCon .title h3{
+    font-size: 1.3rem;
+  }
+  
+  .main .titleCon .title hr{
+    width: 100%;
+  }
+  
+  .main .titleCon .description{
+    grid-template-rows: 1fr;
+  }
+
+  .main a:hover .titleCon .description{
+    padding-bottom: 0;
+  }
+
+  .main .titleCon .description div{
+    font-size: 1.15rem;
+  }
+
+  .main .titleCon .prompt{
+    height: auto;
+    padding-bottom: 4px;
+  }
+
+  .main a:hover .titleCon .prompt{
+    padding-bottom: 4px;
+  }
+
+  .main .titleCon .prompt span{
+    font-size: .8rem;
+    padding: 0;
+  }
+
+  .icon{
+    scale: .8;
+  }
+}
+
+/*phone*/
+@media (max-width: 480px) {
+  .main{
+    width: 315px;
+  }
+
+  .main .titleCon .title h3{
+    font-size: 1rem;
+  }
+
+  .main a:hover .titleCon .title h3{
+    font-size: 1rem;
+  }
+
+  .main .titleCon .description div{
+    font-size: .9rem;
+  }
+
+  .main .titleCon .prompt{
+    padding-bottom: 0px;
+  }
+
+  .main a:hover .titleCon .prompt{
+    padding-bottom: 0px;
+  }
+
+  .icon{
+    scale: .6;
+  }
 }

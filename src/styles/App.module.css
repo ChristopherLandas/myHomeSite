@@ -2,69 +2,94 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   /* background-color: rgb(216, 216, 55); */
 }
 
 .panels{
   display: flex;
   background-color: #13293D;
-  min-height: 99vh;
   justify-content: center;
   align-items: center;
+  padding-bottom: 200px;
+  height: auto;
+}
+
+.panels:nth-of-type(2){
+  padding-block: 100px 200px;
+}
+
+.panels:nth-of-type(5){
+  background-color: aliceblue;
+  padding-block: 20px 50px;
 }
 
 .panels_short{
+  min-height: 400px;
   display: flex;
   background-color: #13293D;
-  min-height: 75vh;
   justify-content: center;
   align-items: center;
+  height: auto;
+  padding-block: 20px;
 }
 
-.greetings{
-  display: flex;
-  /* background-color: antiquewhite; */
+ .greetings{
   height: 60%;
   width: 90%;
+  display: flex;
+  align-items: center;
 }
 
 .greetings .pfp{
-  /* background-color: aqua; */
   width: 30%;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.image{
+.greetings .pfp .image{
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1;
   position: relative;
+  display: flex;
 }
 
 .greetings .pfp .image img{
+  flex-grow: 1;
   border-radius: 100%;
-  aspect-ratio: 1;
-  max-height: 400px;
 }
+  
 
-.greetings .pfp .image h7{
+.greetings .pfp .image h6{
   position: absolute;
-  background-color: #0e161b;
-  border-radius: 100%;
-  font-size: 80px;
   bottom: 0;
   right: 0;
+  display: inline-table;
+  background-color: #0e161b;
+  font-size: 4rem;
+  margin: 0;
+  border-radius: 100%;
+  aspect-ratio: 1;
+  width: 10%;
 }
 
 .greetings .msg{
-  /* background-color:yellow; */
   width: 70%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .greetings .msg .top{
-  /* background-color: black; */
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+
+.greetings .msg .top{
   height: 15%;
   display: flex;
   align-items: center;
@@ -72,9 +97,8 @@
 }
 
 .greetings .msg .mid{
-  /* background-color: rgb(255, 255, 255); */
   height: 75%;
-  font-size: 1.65rem;
+  font-size: 1.75rem;
   padding-block: 20px;
 }
 
@@ -98,7 +122,7 @@
   justify-content: center;
 }
 
-.projects .content{
+.projects .content .browser{
   width: 100%;
   height: 100%;
   display: flex;
@@ -120,4 +144,69 @@ footer .divOut{
 footer .divOut .partition{
   width: 25%;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .main{
+    font-size: 1.4rem;
+  }
+
+  .panels{
+    padding-bottom: 30px;
+  }
+
+  .panels:nth-child(2){
+    padding-block: 0;
+  }
+
+  .greetings{
+    margin-top: 2%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .greetings .pfp{
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+  }
+
+  .greetings .pfp .image{
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    scale: .9;
+  }
+
+  .greetings .msg{
+    width: auto;
+    height: 60%;
+  }
+
+  .greetings .msg .top{
+    /* font-size: 2.4vw; */
+    font-size: 1.1rem;
+    height: auto;
+  }
+
+  .greetings .msg .mid{
+    /* font-size: 2.4vw; */
+    text-align: center;
+    font-size: 1.4rem;
+    height: auto;
+  }
+
+  .greetings .msg .top{
+    margin: 0;
+  }
+
+  .greetings .msg .bot{
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .greetings .msg .mid{
+    font-size: 1.1rem;
+  }
 }

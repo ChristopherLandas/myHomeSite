@@ -11,7 +11,7 @@ import l7 from '../assets/new bg/l7.png'
 
 
 const ParallaxTitle = () => {
-  const device = /android|iPhone/i.test(navigator.userAgent)
+  const device = screen.width <= 768  
 
   return (
     <div>

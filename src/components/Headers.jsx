@@ -15,7 +15,9 @@ const Header = () => {
       <div className={styles.background}></div>
       
       <div className={clsx(styles.navigations, styles.home)}>
-        KurisuDevu
+        <a href="#">
+          Kurisudevu
+        </a>
       </div>
 
       <div className={clsx(styles.navigations, styles.selections)}>
@@ -27,7 +29,7 @@ const Header = () => {
 
       <div className={clsx(styles.navigations, styles.menu)}>
         <a href="#">
-          <AiFillGithub size={45}/>
+          <AiFillGithub size={screen.width >= 768? 45: screen.width >= 480? 39: 36}/>
         </a>
       </div>  
     </nav>

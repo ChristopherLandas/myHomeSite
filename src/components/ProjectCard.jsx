@@ -24,8 +24,8 @@ const ProjectCard = (props) => {
             </div>
             <div className={styles.prompt}>
               {props.promptIcon == 'github'
-                ? <AiFillGithub size={30} color='white'/>
-                : <IoLogoGameControllerB size={30} color='white'/>}
+                ? <AiFillGithub className={styles.icon} size={30} color='white'/>
+                : <IoLogoGameControllerB className={styles.icon} size={30} color='white'/>}
               <span>{props.prompt}</span>
             </div>
           </div>
@@ -47,7 +47,7 @@ ProjectCard.propTypes = {
 ProjectCard.defaultProps = {
   link: '#',
   image: 'https://placehold.co/315x250',
-  title: 'Title Here',
+  title: `${screen.width} x ${screen.height}`,
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, unde! Alias recusandae non voluptate consequuntur, aut expedita, facilis molestias, beatae quisquam doloremque aliquam delectus dicta perferendis eaque sequi quas amet.',
   prompt: 'Click Here',
   promptIcon: 'github'
