@@ -28,7 +28,7 @@ const App = () => {
       link='https://kurisudevu.itch.io/pong-defense'
       image='https://img.itch.zone/aW1nLzExMzAxODM5LnBuZw==/315x250%23c/5%2B7DRe.png'
       title='Pong Defense'
-      description="Pong defense is a survival game with only one goal: make it as big as possible while dodging the hexagonal enemies using your paddle.\nThe challenge is: As you get bigger, your paddle will be smaller and smaller, more enemy type will come, and it's spawn in a faster rate."
+      description="Pong defense is a survival game with only one goal: make it as big as possible while dodging the hexagonal enemies using your paddle. The challenge is: As you get bigger, your paddle will be smaller and smaller, more enemy type will come, and it's spawn in a faster rate."
       prompt='Click to Play'
       promptIcon='games'
     />,
